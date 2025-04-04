@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Wiki & Forum</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card-effects.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/cat-logo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div id="loader">
+            <div id="hill"></div>
+            <div id="box"></div>
+        </div>
+        <div class="loading-text">Đang tải...</div>
+    </div>
+    
+    <!-- Header -->
+    <header class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="cat-logo">
+                        <div class="cat-head">
+                            <div class="cat-ear left"></div>
+                            <div class="cat-ear right"></div>
+                            <div class="cat-face">
+                                <div class="cat-eye left"></div>
+                                <div class="cat-eye right"></div>
+                                <div class="cat-nose"></div>
+                                <div class="cat-mouth"></div>
+                                <div class="cat-whisker left"></div>
+                                <div class="cat-whisker right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Wiki & Forum</span>
+                </a>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="wiki.html">Wiki</a>
+                <a href="forum.html">Forum</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html" class="active">Liên hệ</a>
+                <button class="theme-toggle">🌙</button>
+                <a href="/login" class="login-btn">Đăng nhập</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="contact-page">
+        <div class="container">
+            <section class="contact-hero">
+                <h1>Liên hệ với chúng tôi</h1>
+                <p class="subtitle">Chúng tôi luôn sẵn sàng lắng nghe ý kiến của bạn</p>
+            </section>
+            
+            <section class="contact-content">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-card address">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Địa chỉ</h3>
+                                <p>123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card phone">
+                            <div class="card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Điện thoại</h3>
+                                <p>+84 123 456 789</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card email">
+                            <div class="card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Email</h3>
+                                <p>contact@wikiandforum.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card hours">
+                            <div class="card-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Giờ làm việc</h3>
+                                <p>Thứ 2 - Thứ 6: 8:00 - 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Gửi tin nhắn</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Họ và tên</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Tiêu đề</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Nội dung</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span>Gửi tin nhắn</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="map-section">
+                    <h2>Vị trí của chúng tôi</h2>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4241674197956!2d106.69877!3d10.775844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ2JzM1LjYiTiAxMDbCsDQxJzU1LjYiRQ!5e0!3m2!1svi!2s!4v1234567890"
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="faq-section">
+                    <h2>Câu hỏi thường gặp</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Làm thế nào để đăng ký tài khoản?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Bạn có thể đăng ký tài khoản bằng cách nhấp vào nút "Đăng nhập" ở góc phải trên cùng và chọn "Đăng ký". Điền thông tin cần thiết và xác nhận email để hoàn tất quá trình đăng ký.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Làm thế nào để đóng góp nội dung?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sau khi đăng nhập, bạn có thể tạo bài viết mới hoặc chỉnh sửa bài viết hiện có. Tất cả nội dung đều được kiểm duyệt trước khi xuất bản để đảm bảo chất lượng.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Làm thế nào để báo cáo nội dung không phù hợp?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Bạn có thể báo cáo nội dung không phù hợp bằng cách nhấp vào nút "Báo cáo" ở cuối mỗi bài viết hoặc liên hệ trực tiếp với chúng tôi qua form liên hệ.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Làm thế nào để trở thành biên tập viên?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Để trở thành biên tập viên, bạn cần có ít nhất 50 bài viết chất lượng và được cộng đồng đánh giá cao. Sau đó, bạn có thể nộp đơn ứng tuyển qua form liên hệ.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về chúng tôi</h3>
+                <p>Wiki & Forum là nơi chia sẻ kiến thức và kết nối cộng đồng</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="wiki.html">Wiki</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Theo dõi chúng tôi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wiki & Forum. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Toast Notification -->
+    <div class="toast"></div>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        // Form submission handling
+        const contactForm = document.getElementById('contactForm');
+        const toast = document.querySelector('.toast');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show loading state
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang gửi...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Show success message
+                toast.textContent = 'Tin nhắn đã được gửi thành công!';
+                toast.classList.add('show', 'success');
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                
+                // Hide toast after 3 seconds
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            }, 1500);
+        });
+        
+        // FAQ accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = question.querySelector('i');
+            
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('active');
+                
+                // Close all items
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                    otherItem.querySelector('i').classList.remove('fa-chevron-up');
+                    otherItem.querySelector('i').classList.add('fa-chevron-down');
+                });
+                
+                // Open clicked item if it was closed
+                if (!isOpen) {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

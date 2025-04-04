@@ -1,0 +1,180 @@
+/* Cat Logo Container */
+.cat-logo {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Cat Head */
+.cat-head {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Cat Ears */
+.cat-ear {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #f0f0f0;
+    position: absolute;
+    top: -5px;
+}
+
+.cat-ear.left {
+    left: 5px;
+    transform: rotate(-30deg);
+}
+
+.cat-ear.right {
+    right: 5px;
+    transform: rotate(30deg);
+}
+
+/* Cat Face */
+.cat-face {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cat Eyes */
+.cat-eye {
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+}
+
+.cat-eye.left {
+    left: 30%;
+}
+
+.cat-eye.right {
+    right: 30%;
+}
+
+/* Cat Nose */
+.cat-nose {
+    width: 6px;
+    height: 4px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+/* Cat Mouth */
+.cat-mouth {
+    width: 12px;
+    height: 6px;
+    border-bottom: 2px solid #333;
+    border-radius: 0 0 6px 6px;
+    position: absolute;
+    top: 60%;
+}
+
+/* Cat Whiskers */
+.cat-whisker {
+    width: 20px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    top: 55%;
+}
+
+.cat-whisker.left {
+    left: 10%;
+    transform: rotate(-10deg);
+}
+
+.cat-whisker.right {
+    right: 10%;
+    transform: rotate(10deg);
+}
+
+/* Hover Effects */
+.cat-logo:hover .cat-head {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.cat-logo:hover .cat-eye {
+    animation: blink 0.3s ease;
+}
+
+.cat-logo:hover .cat-mouth {
+    animation: smile 0.3s ease;
+}
+
+/* Animations */
+@keyframes blink {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.1); }
+}
+
+@keyframes smile {
+    0% { transform: scaleX(1); }
+    50% { transform: scaleX(1.2); }
+    100% { transform: scaleX(1); }
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode .cat-head {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .cat-ear {
+    border-bottom-color: #2a2a2a;
+}
+
+body.dark-mode .cat-eye,
+body.dark-mode .cat-mouth,
+body.dark-mode .cat-whisker {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cat-logo {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .cat-ear {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 16px solid #f0f0f0;
+    }
+    
+    .cat-eye {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .cat-nose {
+        width: 4px;
+        height: 3px;
+    }
+    
+    .cat-mouth {
+        width: 10px;
+        height: 4px;
+    }
+    
+    .cat-whisker {
+        width: 16px;
+    }
+} 

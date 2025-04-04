@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Thảo luận cộng đồng</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card-effects.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/cat-logo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div id="loader">
+            <div id="hill"></div>
+            <div id="box"></div>
+        </div>
+        <div class="loading-text">Đang tải...</div>
+    </div>
+    
+    <!-- Header -->
+    <header class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="cat-logo">
+                        <div class="cat-head">
+                            <div class="cat-ear left"></div>
+                            <div class="cat-ear right"></div>
+                            <div class="cat-face">
+                                <div class="cat-eye left"></div>
+                                <div class="cat-eye right"></div>
+                                <div class="cat-nose"></div>
+                                <div class="cat-mouth"></div>
+                                <div class="cat-whisker left"></div>
+                                <div class="cat-whisker right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Wiki & Forum</span>
+                </a>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="wiki.html">Wiki</a>
+                <a href="forum.html" class="active">Forum</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html">Liên hệ</a>
+                <button class="theme-toggle">🌙</button>
+                <a href="/login" class="login-btn">Đăng nhập</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="forum-page">
+        <div class="container">
+            <div class="forum-header">
+                <h1>Diễn đàn thảo luận</h1>
+                <div class="forum-actions">
+                    <button class="new-topic-btn">
+                        <i class="fas fa-plus"></i> Tạo chủ đề mới
+                    </button>
+                    <div class="view-options">
+                        <button class="active"><i class="fas fa-th-large"></i></button>
+                        <button><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forum-filters">
+                <div class="filter-group">
+                    <label>Sắp xếp theo:</label>
+                    <select>
+                        <option value="newest">Mới nhất</option>
+                        <option value="popular">Phổ biến</option>
+                        <option value="unanswered">Chưa trả lời</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Thời gian:</label>
+                    <select>
+                        <option value="all">Tất cả</option>
+                        <option value="today">Hôm nay</option>
+                        <option value="week">Tuần này</option>
+                        <option value="month">Tháng này</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Danh mục:</label>
+                    <select>
+                        <option value="all">Tất cả</option>
+                        <option value="science">Khoa học</option>
+                        <option value="tech">Công nghệ</option>
+                        <option value="history">Lịch sử</option>
+                        <option value="travel">Du lịch</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="forum-content">
+                <div class="topics-grid">
+                    <!-- Topic Card 1 -->
+                    <article class="topic-card">
+                        <div class="topic-header">
+                            <div class="user-info">
+                                <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                                <div class="user-details">
+                                    <h4>Nguyễn Văn A</h4>
+                                    <span class="post-time">2 giờ trước</span>
+                                </div>
+                            </div>
+                            <span class="topic-category">Khoa học</span>
+                        </div>
+                        
+                        <div class="topic-content">
+                            <h3>Thảo luận về Vật chất tối</h3>
+                            <p>Tôi đang nghiên cứu về vật chất tối và muốn chia sẻ một số phát hiện thú vị về vai trò của nó trong sự hình thành và phát triển của vũ trụ...</p>
+                            <div class="topic-image">
+                                <img src="https://via.placeholder.com/600x400" alt="Dark Matter">
+                            </div>
+                        </div>
+                        
+                        <div class="topic-footer">
+                            <div class="topic-meta">
+                                <span><i class="fas fa-comments"></i> 45 bình luận</span>
+                                <span><i class="fas fa-heart"></i> 128 lượt thích</span>
+                                <span><i class="fas fa-eye"></i> 1.2k lượt xem</span>
+                            </div>
+                            <div class="topic-tags">
+                                <a href="#" class="tag">#vật_chất_tối</a>
+                                <a href="#" class="tag">#vũ_trụ</a>
+                                <a href="#" class="tag">#khoa_học</a>
+                            </div>
+                            <button class="participate-btn">Tham gia thảo luận</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Topic Card 2 -->
+                    <article class="topic-card">
+                        <div class="topic-header">
+                            <div class="user-info">
+                                <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                                <div class="user-details">
+                                    <h4>Trần Thị B</h4>
+                                    <span class="post-time">5 giờ trước</span>
+                                </div>
+                            </div>
+                            <span class="topic-category">Du lịch</span>
+                        </div>
+                        
+                        <div class="topic-content">
+                            <h3>Chia sẻ kinh nghiệm trekking Sapa</h3>
+                            <p>Mình vừa trở về từ chuyến trekking Sapa và muốn chia sẻ một số tips hữu ích cho những bạn có ý định đi trong thời gian tới...</p>
+                            <div class="topic-image">
+                                <img src="https://via.placeholder.com/600x400" alt="Sapa Trekking">
+                            </div>
+                        </div>
+                        
+                        <div class="topic-footer">
+                            <div class="topic-meta">
+                                <span><i class="fas fa-comments"></i> 32 bình luận</span>
+                                <span><i class="fas fa-heart"></i> 95 lượt thích</span>
+                                <span><i class="fas fa-eye"></i> 856 lượt xem</span>
+                            </div>
+                            <div class="topic-tags">
+                                <a href="#" class="tag">#sapa</a>
+                                <a href="#" class="tag">#trekking</a>
+                                <a href="#" class="tag">#du_lịch</a>
+                            </div>
+                            <button class="participate-btn">Tham gia thảo luận</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Topic Card 3 -->
+                    <article class="topic-card">
+                        <div class="topic-header">
+                            <div class="user-info">
+                                <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                                <div class="user-details">
+                                    <h4>Lê Văn C</h4>
+                                    <span class="post-time">1 ngày trước</span>
+                                </div>
+                            </div>
+                            <span class="topic-category">Công nghệ</span>
+                        </div>
+                        
+                        <div class="topic-content">
+                            <h3>So sánh các framework JavaScript hiện đại</h3>
+                            <p>Mình đang phân vân giữa React, Vue và Angular cho dự án mới. Có ai có kinh nghiệm sử dụng các framework này có thể chia sẻ ưu nhược điểm...</p>
+                            <div class="topic-image">
+                                <img src="https://via.placeholder.com/600x400" alt="JavaScript Frameworks">
+                            </div>
+                        </div>
+                        
+                        <div class="topic-footer">
+                            <div class="topic-meta">
+                                <span><i class="fas fa-comments"></i> 28 bình luận</span>
+                                <span><i class="fas fa-heart"></i> 76 lượt thích</span>
+                                <span><i class="fas fa-eye"></i> 654 lượt xem</span>
+                            </div>
+                            <div class="topic-tags">
+                                <a href="#" class="tag">#javascript</a>
+                                <a href="#" class="tag">#react</a>
+                                <a href="#" class="tag">#vue</a>
+                                <a href="#" class="tag">#angular</a>
+                            </div>
+                            <button class="participate-btn">Tham gia thảo luận</button>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="pagination">
+                    <button class="prev-page"><i class="fas fa-chevron-left"></i></button>
+                    <div class="page-numbers">
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <span>...</span>
+                        <button>10</button>
+                    </div>
+                    <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <aside class="forum-sidebar">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/100" alt="User Avatar" class="avatar">
+                    <h3>Xin chào!</h3>
+                    <p>Đăng nhập để tham gia thảo luận</p>
+                    <a href="/login" class="login-btn">Đăng nhập</a>
+                </div>
+                
+                <div class="hot-topics">
+                    <h3>Chủ đề hot</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="topic-title">Vật chất tối và vũ trụ</span>
+                                <span class="topic-stats">45 bình luận</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="topic-title">Trekking Sapa</span>
+                                <span class="topic-stats">32 bình luận</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="topic-title">JavaScript Frameworks</span>
+                                <span class="topic-stats">28 bình luận</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="categories">
+                    <h3>Danh mục</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Khoa học</span>
+                                <span class="count">1.2k</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Công nghệ</span>
+                                <span class="count">2.5k</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Lịch sử</span>
+                                <span class="count">856</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Du lịch</span>
+                                <span class="count">1.5k</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về chúng tôi</h3>
+                <p>Wiki & Forum là nơi chia sẻ kiến thức và kết nối cộng đồng</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="wiki.html">Wiki</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Theo dõi chúng tôi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wiki & Forum. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Toast Notification -->
+    <div class="toast"></div>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html> 

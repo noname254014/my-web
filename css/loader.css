@@ -1,0 +1,123 @@
+/* Loader Container */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #404456;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Main Loader */
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2.7em;
+    margin-left: -2.7em;
+    width: 5.4em;
+    height: 5.4em;
+    background-color: #404456;
+}
+
+/* Hill Element */
+#hill {
+    position: absolute;
+    width: 7.1em;
+    height: 7.1em;
+    top: 1.7em;
+    left: 1.7em;
+    background-color: transparent;
+    border-left: .25em solid whitesmoke;
+    transform: rotate(45deg);
+}
+
+#hill:after {
+    content: '';
+    position: absolute;
+    width: 7.1em;
+    height: 7.1em;
+    left: 0;
+    background-color: #404456;
+}
+
+/* Box Element */
+#box {
+    position: absolute;
+    left: 0;
+    bottom: -.1em;
+    width: 1em;
+    height: 1em;
+    background-color: transparent;
+    border: .25em solid whitesmoke;
+    border-radius: 15%;
+    transform: translate(0, -1em) rotate(-45deg);
+    animation: push 2.5s cubic-bezier(.79, 0, .47, .97) infinite;
+}
+
+/* Loading Text */
+.loading-text {
+    color: whitesmoke;
+    font-size: 1.2em;
+    margin-top: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Animations */
+@keyframes push {
+    0% {
+        transform: translate(0, -1em) rotate(-45deg);
+    }
+    5% {
+        transform: translate(0, -1em) rotate(-50deg);
+    }
+    20% {
+        transform: translate(1em, -2em) rotate(47deg);
+    }
+    25% {
+        transform: translate(1em, -2em) rotate(45deg);
+    }
+    30% {
+        transform: translate(1em, -2em) rotate(40deg);
+    }
+    45% {
+        transform: translate(2em, -3em) rotate(137deg);
+    }
+    50% {
+        transform: translate(2em, -3em) rotate(135deg);
+    }
+    55% {
+        transform: translate(2em, -3em) rotate(130deg);
+    }
+    70% {
+        transform: translate(3em, -4em) rotate(217deg);
+    }
+    75% {
+        transform: translate(3em, -4em) rotate(220deg);
+    }
+    100% {
+        transform: translate(0, -1em) rotate(-225deg);
+    }
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode .loader-container {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode #loader,
+body.dark-mode #hill:after {
+    background-color: #1a1a1a;
+}
+
+/* Hide Loader */
+.loader-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+} 

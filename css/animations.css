@@ -1,0 +1,166 @@
+/* Hiệu ứng chung */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes rotateIn {
+    from { transform: rotate(-10deg); opacity: 0; }
+    to { transform: rotate(0); opacity: 1; }
+}
+
+/* Hiệu ứng cho trang About */
+.about-hero {
+    animation: fadeIn 1s ease-out;
+}
+
+.about-card {
+    animation: slideUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.about-card:nth-child(1) { animation-delay: 0.2s; }
+.about-card:nth-child(2) { animation-delay: 0.4s; }
+.about-card:nth-child(3) { animation-delay: 0.6s; }
+
+.team-member {
+    animation: scaleIn 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.team-member:nth-child(1) { animation-delay: 0.3s; }
+.team-member:nth-child(2) { animation-delay: 0.5s; }
+.team-member:nth-child(3) { animation-delay: 0.7s; }
+
+.stat-card {
+    animation: slideUp 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.2s; }
+.stat-card:nth-child(2) { animation-delay: 0.4s; }
+.stat-card:nth-child(3) { animation-delay: 0.6s; }
+.stat-card:nth-child(4) { animation-delay: 0.8s; }
+
+.partners-grid img {
+    animation: scaleIn 0.4s ease-out;
+    animation-fill-mode: both;
+}
+
+.partners-grid img:nth-child(1) { animation-delay: 0.2s; }
+.partners-grid img:nth-child(2) { animation-delay: 0.4s; }
+.partners-grid img:nth-child(3) { animation-delay: 0.6s; }
+.partners-grid img:nth-child(4) { animation-delay: 0.8s; }
+
+/* Hiệu ứng cho trang Contact */
+.contact-hero {
+    animation: fadeIn 1s ease-out;
+}
+
+.info-card {
+    animation: slideInLeft 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.info-card:nth-child(1) { animation-delay: 0.2s; }
+.info-card:nth-child(2) { animation-delay: 0.4s; }
+.info-card:nth-child(3) { animation-delay: 0.6s; }
+.info-card:nth-child(4) { animation-delay: 0.8s; }
+
+.contact-form {
+    animation: slideInRight 0.5s ease-out;
+}
+
+.map-section {
+    animation: fadeIn 1s ease-out;
+}
+
+.faq-item {
+    animation: slideUp 0.5s ease-out;
+    animation-fill-mode: both;
+}
+
+.faq-item:nth-child(1) { animation-delay: 0.2s; }
+.faq-item:nth-child(2) { animation-delay: 0.4s; }
+.faq-item:nth-child(3) { animation-delay: 0.6s; }
+.faq-item:nth-child(4) { animation-delay: 0.8s; }
+
+/* Hiệu ứng hover */
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng cho form */
+.form-group input:focus,
+.form-group textarea:focus {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng cho dark mode */
+[data-theme="dark"] .about-card:hover,
+[data-theme="dark"] .stat-card:hover,
+[data-theme="dark"] .info-card:hover {
+    box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+}
+
+/* Responsive animations */
+@media (max-width: 768px) {
+    .about-card,
+    .team-member,
+    .stat-card,
+    .info-card,
+    .faq-item {
+        animation-delay: 0.2s !important;
+    }
+} 
