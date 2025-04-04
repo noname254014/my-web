@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Styles */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%, rgba(0,0,0,0) 100%);
+}
+
+.nav-link {
+    position: relative;
+    padding: 1rem 0 0.5rem;
+    margin: 0 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-color);
+    transition: transform 250ms;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.nav-link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Dark Mode */
+[data-theme="dark"] .main-nav {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.1) -10%, rgba(255,255,255,0) 100%);
+}
+
+[data-theme="dark"] .nav-link {
+    color: var(--text-color-dark);
+}
+
+[data-theme="dark"] .nav-link::after {
+    background-color: var(--accent-color-dark);
+}
+
+[data-theme="dark"] .nav-link:hover {
+    color: var(--accent-color-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+} 

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki & Forum - Trang chủ</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card-effects.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/cat-logo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/layout.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div id="loader">
+            <div id="hill"></div>
+            <div id="box"></div>
+        </div>
+        <div class="loading-text">Đang tải...</div>
+    </div>
+    
+    <div class="main-container">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-container">
+                <a href="index.html" class="site-logo">
+                    <div class="cat-logo">
+                        <div class="cat-head">
+                            <div class="cat-ear left"></div>
+                            <div class="cat-ear right"></div>
+                            <div class="cat-face">
+                                <div class="cat-eye left"></div>
+                                <div class="cat-eye right"></div>
+                                <div class="cat-nose"></div>
+                                <div class="cat-mouth"></div>
+                                <div class="cat-whisker left"></div>
+                                <div class="cat-whisker right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <span>Wiki & Forum</span>
+                </a>
+                
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="wiki.html" class="nav-link">Wiki</a>
+                    <a href="forum.html" class="nav-link">Forum</a>
+                    <a href="about.html" class="nav-link">Giới thiệu</a>
+                    <a href="contact.html" class="nav-link">Liên hệ</a>
+                    <button class="theme-toggle">🌙</button>
+                    <a href="login.html" class="login-btn">Đăng nhập</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <main class="content-wrapper">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Chào mừng đến với Wiki & Forum</h1>
+                    <p class="hero-subtitle">Nơi chia sẻ kiến thức và kết nối cộng đồng</p>
+                    <div class="hero-buttons">
+                        <a href="wiki.html" class="btn btn-primary">Khám phá Wiki</a>
+                        <a href="forum.html" class="btn btn-secondary">Tham gia Forum</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Featured Categories -->
+            <section class="featured-categories">
+                <h2 class="section-title">Danh mục nổi bật</h2>
+                <div class="grid-container">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3 class="category-title">Lịch sử</h3>
+                        <p class="category-description">Khám phá lịch sử Việt Nam qua các thời kỳ</p>
+                        <a href="wiki.html#history" class="category-link">Xem thêm</a>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="category-title">Ẩm thực</h3>
+                        <p class="category-description">Tìm hiểu về văn hóa ẩm thực Việt Nam</p>
+                        <a href="wiki.html#food" class="category-link">Xem thêm</a>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3 class="category-title">Du lịch</h3>
+                        <p class="category-description">Khám phá các điểm đến du lịch hấp dẫn</p>
+                        <a href="wiki.html#travel" class="category-link">Xem thêm</a>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-theater-masks"></i>
+                        </div>
+                        <h3 class="category-title">Văn hóa</h3>
+                        <p class="category-description">Tìm hiểu về văn hóa truyền thống Việt Nam</p>
+                        <a href="wiki.html#culture" class="category-link">Xem thêm</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Latest Articles -->
+            <section class="latest-articles">
+                <h2 class="section-title">Bài viết mới nhất</h2>
+                <div class="card-grid">
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Dong_Son_drum.jpg/800px-Dong_Son_drum.jpg" alt="Trống đồng Đông Sơn">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Lịch sử</span>
+                                <span class="date">15/05/2024</span>
+                            </div>
+                            <h3 class="article-title">Lịch sử Việt Nam</h3>
+                            <p class="article-excerpt">Khám phá lịch sử Việt Nam qua các thời kỳ, từ thời kỳ đồ đá đến nền văn minh hiện đại...</p>
+                            <a href="wiki-pages/lich-su-viet-nam.html" class="read-more">Đọc thêm</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pho.jpg/800px-Pho.jpg" alt="Phở Việt Nam">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Ẩm thực</span>
+                                <span class="date">14/05/2024</span>
+                            </div>
+                            <h3 class="article-title">Văn hóa ẩm thực Việt Nam</h3>
+                            <p class="article-excerpt">Tìm hiểu về nền ẩm thực phong phú và đa dạng của Việt Nam, từ các món ăn đường phố đến ẩm thực cung đình...</p>
+                            <a href="wiki-pages/van-hoa-am-thuc-viet-nam.html" class="read-more">Đọc thêm</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ha_Long_Bay.jpg/800px-Ha_Long_Bay.jpg" alt="Vịnh Hạ Long">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Du lịch</span>
+                                <span class="date">13/05/2024</span>
+                            </div>
+                            <h3 class="article-title">Du lịch Việt Nam</h3>
+                            <p class="article-excerpt">Khám phá những điểm đến du lịch hấp dẫn tại Việt Nam, từ những di sản thiên nhiên đến các di tích lịch sử...</p>
+                            <a href="wiki-pages/du-lich-viet-nam.html" class="read-more">Đọc thêm</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="view-all-container">
+                    <a href="wiki.html" class="btn btn-primary">Xem tất cả bài viết</a>
+                </div>
+            </section>
+            
+            <!-- Popular Discussions -->
+            <section class="popular-discussions">
+                <h2 class="section-title">Thảo luận phổ biến</h2>
+                <div class="card-grid">
+                    <div class="discussion-card">
+                        <div class="discussion-header">
+                            <div class="discussion-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar">
+                            </div>
+                            <div class="discussion-meta">
+                                <h3 class="discussion-title">Bàn về lịch sử Việt Nam</h3>
+                                <div class="discussion-info">
+                                    <span class="author">Trần Văn A</span>
+                                    <span class="date">10/05/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="discussion-excerpt">Thảo luận về các sự kiện lịch sử quan trọng của Việt Nam và tầm ảnh hưởng của chúng đến hiện tại...</p>
+                        <div class="discussion-stats">
+                            <span><i class="fas fa-comment"></i> 45</span>
+                            <span><i class="fas fa-eye"></i> 1,234</span>
+                            <span><i class="fas fa-thumbs-up"></i> 89</span>
+                        </div>
+                        <a href="forum.html#discussion1" class="read-more">Xem thảo luận</a>
+                    </div>
+                    
+                    <div class="discussion-card">
+                        <div class="discussion-header">
+                            <div class="discussion-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar">
+                            </div>
+                            <div class="discussion-meta">
+                                <h3 class="discussion-title">Ẩm thực Việt Nam</h3>
+                                <div class="discussion-info">
+                                    <span class="author">Lê Thị B</span>
+                                    <span class="date">09/05/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="discussion-excerpt">Chia sẻ công thức nấu ăn và thảo luận về các món ăn truyền thống của Việt Nam...</p>
+                        <div class="discussion-stats">
+                            <span><i class="fas fa-comment"></i> 32</span>
+                            <span><i class="fas fa-eye"></i> 987</span>
+                            <span><i class="fas fa-thumbs-up"></i> 67</span>
+                        </div>
+                        <a href="forum.html#discussion2" class="read-more">Xem thảo luận</a>
+                    </div>
+                    
+                    <div class="discussion-card">
+                        <div class="discussion-header">
+                            <div class="discussion-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Avatar">
+                            </div>
+                            <div class="discussion-meta">
+                                <h3 class="discussion-title">Du lịch Việt Nam</h3>
+                                <div class="discussion-info">
+                                    <span class="author">Nguyễn Văn C</span>
+                                    <span class="date">08/05/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="discussion-excerpt">Chia sẻ kinh nghiệm du lịch và gợi ý các điểm đến hấp dẫn tại Việt Nam...</p>
+                        <div class="discussion-stats">
+                            <span><i class="fas fa-comment"></i> 28</span>
+                            <span><i class="fas fa-eye"></i> 876</span>
+                            <span><i class="fas fa-thumbs-up"></i> 54</span>
+                        </div>
+                        <a href="forum.html#discussion3" class="read-more">Xem thảo luận</a>
+                    </div>
+                </div>
+                <div class="view-all-container">
+                    <a href="forum.html" class="btn btn-primary">Xem tất cả thảo luận</a>
+                </div>
+            </section>
+            
+            <!-- Newsletter -->
+            <section class="newsletter-section">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Đăng ký nhận tin</h2>
+                    <p class="newsletter-description">Nhận thông báo về bài viết mới và thảo luận hấp dẫn</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Nhập email của bạn" class="newsletter-input">
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3 class="footer-section-title">Về chúng tôi</h3>
+                        <p>Wiki & Forum là nơi chia sẻ kiến thức và kết nối cộng đồng. Chúng tôi cung cấp thông tin đáng tin cậy về nhiều lĩnh vực khác nhau.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3 class="footer-section-title">Liên kết nhanh</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="wiki.html">Wiki</a></li>
+                            <li class="footer-link"><a href="forum.html">Forum</a></li>
+                            <li class="footer-link"><a href="about.html">Giới thiệu</a></li>
+                            <li class="footer-link"><a href="contact.html">Liên hệ</a></li>
+                            <li class="footer-link"><a href="#">Chính sách bảo mật</a></li>
+                            <li class="footer-link"><a href="#">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3 class="footer-section-title">Danh mục</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="#">Lịch sử</a></li>
+                            <li class="footer-link"><a href="#">Văn hóa</a></li>
+                            <li class="footer-link"><a href="#">Du lịch</a></li>
+                            <li class="footer-link"><a href="#">Khoa học</a></li>
+                            <li class="footer-link"><a href="#">Công nghệ</a></li>
+                            <li class="footer-link"><a href="#">Giáo dục</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3 class="footer-section-title">Liên hệ</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ, Hà Nội</li>
+                            <li class="footer-link"><i class="fas fa-phone"></i> +84 123 456 789</li>
+                            <li class="footer-link"><i class="fas fa-envelope"></i> info@wikiandforum.com</li>
+                            <li class="footer-link"><i class="fas fa-clock"></i> Thứ 2 - Chủ nhật: 8:00 - 18:00</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Wiki & Forum. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Toast Notification -->
+    <div class="toast"></div>
+    
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
